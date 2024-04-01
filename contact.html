@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <!-- Postavke meta podataka -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Naslov stranice -->
+    <title>Stranica - Hana</title>
+    <!-- Povezivanje sa eksternim CSS fajlom -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome Link za Ikone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Glavni navigacioni meni -->
+        <nav class="navbar">
+            <!-- Logo sa linkom koji vodi na početnu stranicu -->
+            <h2 class="logo"><a href="#">HANA</a></h2>
+            <!-- Checkbox za otvaranje/sakrivanje mobilnog menija -->
+            <input type="checkbox" id="menu-toggler">
+            <!-- Hamburger ikona za mobilni meni -->
+            <label for="menu-toggler" id="hamburger-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z" />
+                </svg>
+            </label>
+            <!-- Lista svih linkova u navigaciji -->
+            <ul class="all-links">
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="services.html">Usluge</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">O nama</a></li>
+                <li><a href="contact.html">Kontaktirajte nas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sekcija za kontakt informacije -->
+    <section class="contact" id="contact" style="margin-top:3.5rem">
+        <!-- Naslov sekcije -->
+        <h2>Kontaktirajte nas</h2>
+        <!-- Paragraf sa opisom sekcije -->
+        <p>Obratite nam se za sva pitanja ili povratne informacije.</p>
+        <!-- Dva stupca za prikaz kontaktnih informacija i kontakt forme -->
+        <div class="row">
+            <!-- Stupac sa kontakt informacijama -->
+            <div class="col information">
+                <!-- Div sa detaljima kontakta -->
+                <div class="contact-details">
+                    <!-- Adresa -->
+                    <p><i class="fas fa-map-marker-alt"></i> Gimnazija Obala Sarajevo</p>
+                    <!-- Email -->
+                    <p><i class="fas fa-envelope"></i> info@gimobala.com</p>
+                    <!-- Telefon -->
+                    <p><i class="fas fa-phone"></i> 033 000 000</p>
+                </div>
+            </div>
+            <!-- Stupac sa kontakt formom -->
+            <div class="col form">
+                <!-- Forma za slanje poruke -->
+                <form method="POST" action="submit.php">
+                    <!-- Polje za unos imena -->
+                    <input type="text" name="name" placeholder="Ime*" required>
+                    <!-- Polje za unos email adrese -->
+                    <input type="email" name="email" placeholder="Email*" required>
+                    <!-- Polje za unos poruke -->
+                    <textarea name="message" placeholder="Poruka*" required></textarea>
+                    <!-- Dugme za slanje forme -->
+                    <button type="submit" name="submit">Pošalji Poruku</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer sekcija -->
+    <footer>
+        <div>
+            <!-- Tekst o autorskim pravima -->
+            <span>Autorska prava © 2023 Sva prava zadržana</span>
+            <!-- Linkovi za Početnu stranicu i Kontakt stranicu -->
+            <span class="link">
+                <a href="index.html">Početna</a>
+                <a href="contact.html">Kontakt</a>
+            </span>
+        </div>
+    </footer>
+
+</body>
+</html>

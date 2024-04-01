@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <!-- Definisanje karakter seta i viewport-a za odgovarajući prikaz na mobilnim uređajima -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Naslov stranice -->
+    <title>Stranica - Hana</title>
+    <!-- Povezivanje CSS datoteke za stilizaciju -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome Link za Ikone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <!-- Zaglavlje sa navigacionim menijem -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo sa linkom koji vodi na početnu stranicu -->
+            <h2 class="logo"><a href="#">HANA</a></h2>
+            <!-- Checkbox za mobilni meni -->
+            <input type="checkbox" id="menu-toggler">
+            <!-- Labela za hamburger ikonu -->
+            <label for="menu-toggler" id="hamburger-btn">
+                <!-- SVG ikona za hamburger -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z" />
+                </svg>
+            </label>
+            <!-- Lista svih linkova za navigaciju -->
+            <ul class="all-links">
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="services.html">Usluge</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">O nama</a></li>
+                <li><a href="contact.html">Kontaktirajte nas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sekcija početne stranice -->
+    <section class="homepage" id="home">
+        <div class="content">
+            <!-- Div sa tekstom na početnoj stranici -->
+            <div class="text">
+                <!-- Naslov na početnoj stranici -->
+                <h1>Kamperska Oprema i Osnovne Stvari</h1>
+                <!-- Paragraf sa opisom na početnoj stranici -->
+                <p>
+                    Otkrijte kvalitetnu kampersku opremu za nezaboravne avanture na otvorenom. <br> Opremite se i stvarajte trajne uspomene.
+                </p>
+            </div>
+            <!-- Link koji vodi na stranicu sa uslugama -->
+            <a href="services.html">Naše Usluge</a>
+        </div>
+    </section>
+
+</body>
+</html>
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <!-- Definisanje karakter seta i viewport-a za odgovarajući prikaz na mobilnim uređajima -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Naslov stranice -->
+    <title>Stranica - Hana</title>
+    <!-- Povezivanje CSS datoteke za stilizaciju -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome Link za Ikone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <!-- Zaglavlje sa navigacionim menijem -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo sa linkom koji vodi na početnu stranicu -->
+            <h2 class="logo"><a href="#">HANA</a></h2>
+            <!-- Checkbox za mobilni meni -->
+            <input type="checkbox" id="menu-toggler">
+            <!-- Labela za hamburger ikonu -->
+            <label for="menu-toggler" id="hamburger-btn">
+                <!-- SVG ikona za hamburger -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z" />
+                </svg>
+            </label>
+            <!-- Lista svih linkova za navigaciju -->
+            <ul class="all-links">
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="services.html">Usluge</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">O nama</a></li>
+                <li><a href="contact.html">Kontaktirajte nas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sekcija o nama -->
+    <section class="about" id="about" style="margin-top:3.5rem">
+        <!-- Naslov sekcije -->
+        <h2>O nama</h2>
+        <!-- Paragraf sa opisom sekcije -->
+        <p>Otkrijte našu priču o pružanju usluga kampiranja.</p>
+        <!-- Div sa informacijama o kompaniji -->
+        <div class="row company-info">
+            <!-- Naslov sekcije o priči kompanije -->
+            <h3>Naša Priča</h3>
+            <!-- Paragraf sa opisom priče kompanije -->
+            <p>Iskusite izvrsnost naše opreme za kampiranje i usluga, gdje već više od deset godina nudimo visokokvalitetne kamperske osnovne stvari i opremu za ljubitelje prirode. Naša posvećenost kvalitetu i zadovoljstvu korisnika osigurava da se svaki avanturista može osloniti na nas za svoje potrebe za kampiranjem.</p>
+        </div>
+        <!-- Div sa misijom i vizijom kompanije -->
+        <div class="row mission-vision">
+            <!-- Naslov sekcije sa misijom -->
+            <h3>Naša Misija</h3>
+            <!-- Paragraf sa opisom misije -->
+            <p>U Camping Gear Experts, naša misija je opremiti ljubitelje prirode vrhunskom opremom i osnovnim stvarima za kampiranje koje poboljšavaju njihova iskustva na otvorenom. Trudimo se pružiti pouzdane, izdržljive i inovativne proizvode koji doprinose nezaboravnim avanturama i trajnim uspomenama.</p>
+            <!-- Naslov sekcije sa vizijom -->
+            <h3>Naša Vizija</h3>
+            <!-- Paragraf sa opisom vizije -->
+            <p>Naša vizija je postati odredište broj jedan za ljubitelje kampiranja, poznato po našem širokom izboru premijerne opreme za kampiranje i izuzetnoj korisničkoj podršci. Težimo inspirirati i omogućiti ljudima da zavole ljepotu prirode i stvore nezaboravna iskustva kampiranja.</p>
+        </div>
+        <!-- Div sa informacijama o timu kompanije -->
+        <div class="row team">
+            <!-- Naslov sekcije o timu -->
+            <h3>Naš Tim</h3>
+            <!-- Lista sa imenima i titulama članova tima -->
+            <ul>
+                <li>John Doe - Osnivač i CEO</li>
+                <li>Jane Smith - Stručnjak za opremu</li>
+                <li>Mark Johnson - Predstavnik korisnika</li>
+                <li>Sarah Brown - Menadžer operacija</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Podnožje stranice -->
+    <footer>
+        <div>
+            <!-- Copyright tekst -->
+            <span>Autorska prava © 2023 Sva prava zadržana</span>
+            <!-- Linkovi za Početnu stranicu i Kontakt stranicu -->
+            <span class="link">
+                <a href="index.html">Početna</a>
+                <a href="contact.html">Kontakt</a>
+            </span>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <!-- Definisanje karakter seta i viewport-a za odgovarajući prikaz na mobilnim uređajima -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Naslov stranice -->
+    <title>Stranica - Hana</title>
+    <!-- Povezivanje CSS datoteke za stilizaciju -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome Link za Ikone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <!-- Zaglavlje sa navigacionim menijem -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo sa linkom koji vodi na početnu stranicu -->
+            <h2 class="logo"><a href="#">HANA</a></h2>
+            <!-- Checkbox za mobilni meni -->
+            <input type="checkbox" id="menu-toggler">
+            <!-- Labela za hamburger ikonu -->
+            <label for="menu-toggler" id="hamburger-btn">
+                <!-- SVG ikona za hamburger -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z" />
+                </svg>
+            </label>
+            <!-- Lista svih linkova za navigaciju -->
+            <ul class="all-links">
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="services.html">Usluge</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">O nama</a></li>
+                <li><a href="contact.html">Kontaktirajte nas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sekcija sa uslugama -->
+    <section class="services" id="services" style="margin-top:3.5rem">
+        <!-- Naslov sekcije -->
+        <h2>Naše Usluge</h2>
+        <!-- Paragraf sa opisom sekcije -->
+        <p>Istražite naš širok spektar usluga kamperske opreme.</p>
+        <!-- Dugme za prikazivanje/skrivanje usluga -->
+        <button id="dugme" class="button">Prikaži Usluge</button>
+        <!-- Div koji sadrži sve usluge (inicijalno skriven) -->
+        <div id="usluge" style="display: none;">
+            <!-- Lista sa karticama za svaku uslugu -->
+            <ul class="cards">
+                <li class="card">
+                    <img src="images/tents.jpg" alt="img">
+                    <h3>Šatori</h3>
+                    <p>Iskusite udobnost i zaštitu sa našim visokokvalitetnim kamperskim šatorima.</p>
+                </li>
+                <li class="card">
+                    <img src="images/bags.jpg" alt="img">
+                    <h3>Vreće za spavanje</h3>
+                    <p>Ostanite udobni i topli tokom vaših kamperskih putovanja sa našim premium vrećama za spavanje.</p>
+                </li>
+                <li class="card">
+                    <img src="images/stoves.jpg" alt="img">
+                    <h3>Kamperski Šporeti</h3>
+                    <p>Kuvajte ukusne obroke na otvorenom sa našim pouzdanim kamperskim šporetima.</p>
+                </li>
+                <li class="card">
+                    <img src="images/backpacks.jpg" alt="img">
+                    <h3>Rančevi</h3>
+                    <p>Nosite svoje neophodnosti udobno sa našim izdržljivim i funkcionalnim kamperskim rančevima.</p>
+                </li>
+                <li class="card">
+                    <img src="images/chair.jpg" alt="img">
+                    <h3>Kamperske Stolice</h3>
+                    <p>Opustite se i odmorite se sa stilom uz naše udobne i prenosive kamperske stolice.</p>
+                </li>
+                <li class="card">
+                    <img src="images/light.jpg" alt="img">
+                    <h3>Kamperska Svjetla</h3>
+                    <p>Osijetlite svoj kamp sa našim pouzdanim i energetski efikasnim kamperskim svjetlima.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+<script>
+    // Kada se stranica services.html loada starta se ova funkcija
+    window.onload = function () {
+
+        // Ovdje uzimamo varijable pomocu getElementById
+        var toggleButton = document.getElementById("dugme");
+        var servicesDiv = document.getElementById("usluge");
+
+
+        // Stavljam event Listener ako se ovo dugme klikne
+        toggleButton.addEventListener("click", function () {
+
+            // Provjeravamo da li se prozor gdje usluge nalaze prikazuje
+            if (servicesDiv.style.display === "none") {
+
+                // Ovdje prikazujemo prozor sa uslugama
+                servicesDiv.style.display = "block";
+
+                // Ovdje stavljam text u button ukoliko korisnik želi sakriti taj prozor
+                toggleButton.textContent = "Sakrij Usluge";
+            } else {
+
+                // U svakom ostalo slučaju prozor stavljamo da se ne prikazuje
+                servicesDiv.style.display = "none";
+
+                // I ovdje stavljamo tekst u dugme ukoliko korisnik želi prikazati prozor
+                toggleButton.textContent = "Prikaži Usluge";
+            }
+        });
+    };
+</script>
+  </body>
+</html>
